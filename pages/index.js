@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Banner from '../components/banner/banner';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,6 +11,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Netflix</h1>
+
+      {/* <NavBar />
+      <Card /> */}
+      <Banner 
+        title='Chingu the Black dog'
+        subTitle='a very cute dog'
+        imgUrl='/static/chingu.webp'
+        />
+      
     </div>
   );
 }
