@@ -4,23 +4,11 @@ import Navbar from '../components/nav/navbar';
 import Card from '../components/card/card';
 import SectionCards from '../components/Card/section-cards';
 import styles from '../styles/Home.module.css';
+import { getVideos } from '../lib/videos';
 
 export default function Home() {
-  const disneyVideos = [
-    {
-      imgUrl: "/static/chingu.webp"
-    },
-    {
-      imgUrl: "/static/chingu.webp"
-    },
-    {
-      imgUrl: "/static/chingu.webp"
-    },
-    {
-      imgUrl: "/static/chingu.webp"
-    },
-    
-  ];
+
+  const disneyVideos = getVideos();
   return (
     <div className={styles.container}>
       <Head>
