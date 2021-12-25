@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Banner from '../components/banner/banner';
 import Navbar from '../components/nav/navbar';
 import Card from '../components/card/card';
-import styles from '../styles/Home.module.css'
+import SectionCards from '../components/Card/section-cards';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
         subTitle='a very cute dog'
         imgUrl='/static/chingu.webp'
         />
+
+      <SectionCards title='Disney' />
 
       <Card 
         imgUrl='/static/chingu.webp'
