@@ -6,6 +6,21 @@ import SectionCards from '../components/Card/section-cards';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const disneyVideos = [
+    {
+      imgUrl: "/static/chingu.webp"
+    },
+    {
+      imgUrl: "/static/chingu.webp"
+    },
+    {
+      imgUrl: "/static/chingu.webp"
+    },
+    {
+      imgUrl: "/static/chingu.webp"
+    },
+    
+  ];
   return (
     <div className={styles.container}>
       <Head>
@@ -21,8 +36,13 @@ export default function Home() {
         subTitle='a very cute dog'
         imgUrl='/static/chingu.webp'
         />
+
       <div className={styles.sectionWrapper}>
-        <SectionCards title='Disney' />  
+        <SectionCards 
+        title='Disney'
+        videos={disneyVideos}
+        size="large"
+        /> 
       </div>
     </div>
   );
