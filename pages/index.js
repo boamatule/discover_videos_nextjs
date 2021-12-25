@@ -21,21 +21,9 @@ export default function Home() {
         subTitle='a very cute dog'
         imgUrl='/static/chingu.webp'
         />
-
-      <SectionCards title='Disney' />
-
-      <Card 
-        imgUrl='/static/chingu.webp'
-        size="large"
-      /> 
-      <Card 
-        imgUrl='/static/chingu.webp'
-        size="medium"
-      /> 
-      <Card 
-        imgUrl='/static/chingu.webp'
-        size="small"
-      />  
+      <div className={styles.sectionWrapper}>
+        <SectionCards title='Disney' />  
+      </div>
     </div>
   );
 }
