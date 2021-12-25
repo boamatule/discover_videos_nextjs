@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Banner from '../components/banner/banner';
-import Navbar from '../components/banner/nav/nav';
+import Navbar from '../components/banner/nav/navbar';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
