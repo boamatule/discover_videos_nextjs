@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Banner from '../components/banner/banner';
-import Navbar from '../components/banner/nav/navbar';
+import Navbar from '../components/nav/navbar';
+import Card from '../components/card/card';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,13 +14,25 @@ export default function Home() {
       </Head>
 
       <Navbar username="boa@gmail.com" />
-      {/* <Card /> */}
+
       <Banner 
         title='Chingu the Black dog'
         subTitle='a very cute dog'
         imgUrl='/static/chingu.webp'
         />
-      
+
+      <Card 
+        imgUrl='/static/chingu.webp'
+        size="large"
+      /> 
+      <Card 
+        imgUrl='/static/chingu.webp'
+        size="medium"
+      /> 
+      <Card 
+        imgUrl='/static/chingu.webp'
+        size="small"
+      />  
     </div>
   );
 }
