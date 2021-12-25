@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useRouter } from 'next/router'
 import Link from 'next/link';
 import styles from './navbar.module.css';
@@ -5,15 +6,21 @@ import styles from './navbar.module.css';
 const Navbar = (props) => {
 	const {username} = props;
 
+	const [showDropdown, setShowDropdown] = useState(false);
 	const router = useRouter();
 
 	const handleOnClickHome = (e) => {
-		e.preventDefault()
-    router.push('/')
+		e.preventDefault();
+    router.push('/');
 	};
 	const handleOnClickMyList = (e) => {
-		e.preventDefault()
-    router.push('browse/my-list/')
+		e.preventDefault();
+    router.push('browse/my-list/');
+	};
+
+	const handleShowDropdown = (e) => {
+		e.preventDefault();
+		setShowDropdown(!showDropdown);
 	};
 
 	return (
@@ -34,14 +41,16 @@ const Navbar = (props) => {
 					My List
 				</li>
 		</ul>
-
+		
 		<nav className={styles.navContainer}>
 			<div>
-				<button className={styles.usernameBtn}>
+				<button className={styles.usernameBtn}
+					onClick={handleShowDropdown}
+				>
 					<p className={styles.username}>{username}</p>
 					{/** Expand more icon */}
 				</button>
-
+				{showDropdown && (
 				<div className={styles.navDropdown}>
 					<div>
 						<Link href="/login">
@@ -50,6 +59,7 @@ const Navbar = (props) => {
 					<div className={styles.lineWrapper}></div>
 				</div>
 				</div>
+				)}
 			</div>
 		</nav>
 		</div>
