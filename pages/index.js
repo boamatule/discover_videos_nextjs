@@ -1,14 +1,19 @@
 import Head from 'next/head'
 import Banner from '../components/banner/banner';
 import Navbar from '../components/nav/navbar';
-import Card from '../components/card/card';
 import SectionCards from '../components/Card/section-cards';
 import styles from '../styles/Home.module.css';
+
 import { getVideos } from '../lib/videos';
 
-export default function Home() {
-
+export async function getServerSideProps() {
   const disneyVideos = getVideos();
+
+  return { props: { disneyVideos } }
+};
+
+export default function Home({ disneyVideos }) {
+  console.log({ disneyVideos })
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"   />
       </Head>
 
-      <Navbar username="boa@gmail.com" />
+      <Navbar username="thisisboa@working.com" />
 
       <Banner 
         title='Chingu the Black dog'
@@ -25,6 +30,13 @@ export default function Home() {
         imgUrl='/static/chingu.webp'
         />
 
+      <div className={styles.sectionWrapper}>
+        <SectionCards 
+        title='Disney'
+        videos={disneyVideos}
+        size="large"
+        /> 
+      </div>
       <div className={styles.sectionWrapper}>
         <SectionCards 
         title='Disney'
