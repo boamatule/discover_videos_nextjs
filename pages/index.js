@@ -48,7 +48,7 @@ export default function Home({ disneyVideos, productivityVideos, travelVideos, p
       <SectionCards title="Productivity" videos={productivityVideos} size="medium" />
       <SectionCards 
         title='Popular'
-        videos={popularVideos}
+        videos={disneyVideos}
         size="small"
         /> 
     
