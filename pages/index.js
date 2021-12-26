@@ -11,7 +11,6 @@ export async function getServerSideProps() {
   const productivityVideos = await getVideos("productivity");
   const travelVideos = await getVideos("indie music");
   const popularVideos = await getPopularVideos();
-
   return {
     props: {
       disneyVideos,
@@ -28,7 +27,6 @@ export default function Home({
   travelVideos,
   popularVideos,
 }) {
-  console.log({ disneyVideos });
   return (
     <div className={styles.container}>
       <Head>

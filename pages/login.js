@@ -1,7 +1,9 @@
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+
+import { magic } from "../lib/magic-client";
 
 import styles from "../styles/Login.module.css";
 
@@ -9,25 +11,37 @@ const Login = () => {
   const [userMsg, setUserMsg] = useState("");
   const [email, setEmail] = useState("");
 
-	const router = useRouter();
+  const router = useRouter();
 
   const handleOnChangeEmail = (e) => {
     setUserMsg();
     console.log("event", e);
     const email = e.target.value;
     setEmail(email);
-    e.preventDefault();
+    // e.preventDefault();
   };
 
-  const handleLoginWithEmail = (e) => {
+  const handleLoginWithEmail = async (e) => {
     console.log("Hi button");
     e.preventDefault();
     if (email) {
-      if (email === "boa@gmail.com") {
-				router.push('/')
+      if (email === "boa.matule@gmail.com") {
+        // log in a user by their email
+        try {
+          const didToken = await magic.auth.
+					loginWithMagicLink({ 
+						email,
+					});
+					console.log({ didToken })
+        } catch (error) {
+          // Handle errors if required!
+					console.error('Something went wrong logging in', error);
+        }
+
+        // router.push("/")
       } else {
-				setUserMsg('Something went wrong logging in')
-			}
+        setUserMsg("Something went wrong logging in");
+      }
     } else {
       // show user message
       setUserMsg("Enter a valid email address");
