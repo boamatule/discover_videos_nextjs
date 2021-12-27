@@ -9,19 +9,7 @@ import NavBar from "../../components/nav/navbar";
 Modal.setAppElement("#__next");
 
 export async function getStaticProps(context) {
-	// data to fetch from the API
-	// const  video = {
-	// 	title: "Hi cute dog",
-	// 	publishTime: "1990-01-01",
-	// 	description: "A big red dog that is super cute. Can he get any longer",
-	// 	channelTitle: "Paramount Pictures",
-	// 	viewCount: "1000000"
-	// }
-
-  console.log({ context });
-
 	const videoId = context.params.videoId;
-
 
 	const videoArray = await getYoutubeVideoById(videoId);
 
@@ -47,14 +35,13 @@ export async function getStaticPaths() {
 const Video = ({ video }) => {
   const router = useRouter();
 
-	const {
-    title, 
-    publishTime, 
-    description, 
-    channelTitle, 
-    statistics : { viewCount } = { viewCount: 0 },
+  const {
+    title,
+    publishTime,
+    description,
+    channelTitle,
+    statistics: { viewCount } = { viewCount: 0 },
   } = video;
-
 
   return (
     <div>
@@ -71,30 +58,31 @@ const Video = ({ video }) => {
           id="player"
           type="text/html"
           width="100%"
-          height="390"
+          height="360"
           src={`http://www.youtube.com/embed/${router.query.videoId}?autoplay=0&origin=http://example.com&controls=0&rel=0`}
           frameBorder="0"
-        ></iframe>
+          >
+        </iframe>
 				
-				<div className={styles.modalBody}>
-					<div className={styles.modalBodyContent}>
-						<div className={styles.col1}>
-							<p className={styles.publishTime}>{publishTime}</p>
-							<p className={styles.title}>{title}</p>
-							<p className={styles.description}>{description}</p>
-						</div>
-						<div className={styles.col2}>
-							<p className={clsx(styles.subText, styles.subTextWrapper)}>
-								<span className={styles.textColor}>Cast:</span>
-								<span className={styles.channelTitle}>{channelTitle}</span>
-							</p>
-							<p className={styles.subText}>
-								<span className={styles.textColor}>View Count:</span>
-								<span className={styles.channelTitle}>{viewCount}</span>
-							</p>
-						</div>
-					</div>
-				</div>
+        <div className={styles.modalBody}>
+          <div className={styles.modalBodyContent}>
+            <div className={styles.col1}>
+              <p className={styles.publishTime}>{publishTime}</p>
+              <p className={styles.title}>{title}</p>
+              <p className={styles.description}>{description}</p>
+            </div>
+            <div className={styles.col2}>
+              <p className={clsx(styles.subText, styles.subTextWrapper)}>
+                <span className={styles.textColor}>Cast: </span>
+                <span className={styles.channelTitle}>{channelTitle}</span>
+              </p>
+              <p className={clsx(styles.subText, styles.subTextWrapper)}>
+                <span className={styles.textColor}>View Count: </span>
+                <span className={styles.channelTitle}>{viewCount}</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </Modal>
     </div>
   );
