@@ -2,22 +2,29 @@ import { useRouter } from "next/router";
 import Modal from "react-modal";
 import styles from "../../styles/Video.module.css";
 import clsx  from "classnames";
+import { getYoutubeVideosById } from "../../lib/videos";
+
 
 Modal.setAppElement("#__next");
 
 export async function getStaticProps() {
 	// data to fetch from the API
-	const  video = {
-		title: "Hi cute dog",
-		publishTime: "1990-01-01",
-		description: "A big red dog that is super cute. Can he get any longer",
-		channelTitle: "Paramount Pictures",
-		viewCount: "1000000"
-	}
+	// const  video = {
+	// 	title: "Hi cute dog",
+	// 	publishTime: "1990-01-01",
+	// 	description: "A big red dog that is super cute. Can he get any longer",
+	// 	channelTitle: "Paramount Pictures",
+	// 	viewCount: "1000000"
+	// }
+
+	const videoId = '4zH5iYM4wJo';
+
+
+	const videoArray = await getYoutubeVideosById(videoId);
 
   return {
     props: {
-      video,
+      video: videoArray.length > 0 ? videoArray[0] : {},
     },
     revalidate: 10, // In seconds
   }
@@ -37,7 +44,7 @@ export async function getStaticPaths() {
 const Video = ({ video }) => {
   const router = useRouter();
 
-	const {title, publishTime, description, channelTitle, viewCount  } = video;
+	const {title, publishTime, description, channelTitle, statistics : {viewCount}  } = video;
 
 
   return (
