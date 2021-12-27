@@ -39,6 +39,7 @@ export default function Home({
         <Navbar username="thisisboa@working.com" />
 
         <Banner
+          videoId="34wcvervev"
           title="Chingu the Black dog"
           subTitle="a very cute dog"
           imgUrl="/static/chingu.webp"
