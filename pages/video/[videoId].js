@@ -2,12 +2,12 @@ import { useRouter } from "next/router";
 import Modal from "react-modal";
 import styles from "../../styles/Video.module.css";
 import clsx  from "classnames";
-import { getYoutubeVideosById } from "../../lib/videos";
+import { getYoutubeVideoById } from "../../lib/videos";
 
 
 Modal.setAppElement("#__next");
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
 	// data to fetch from the API
 	// const  video = {
 	// 	title: "Hi cute dog",
@@ -17,10 +17,12 @@ export async function getStaticProps() {
 	// 	viewCount: "1000000"
 	// }
 
-	const videoId = '4zH5iYM4wJo';
+  console.log({ context });
+
+	const videoId = context.params.videoId;
 
 
-	const videoArray = await getYoutubeVideosById(videoId);
+	const videoArray = await getYoutubeVideoById(videoId);
 
   return {
     props: {
@@ -44,7 +46,13 @@ export async function getStaticPaths() {
 const Video = ({ video }) => {
   const router = useRouter();
 
-	const {title, publishTime, description, channelTitle, statistics : {viewCount}  } = video;
+	const {
+    title, 
+    publishTime, 
+    description, 
+    channelTitle, 
+    statistics : { viewCount } = { viewCount: 0 },
+  } = video;
 
 
   return (
