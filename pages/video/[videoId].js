@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 
 const Video = ({ video }) => {
   const router = useRouter();
-
+  const videoId = router.query.videoId;
   const {
     title,
     publishTime,
@@ -59,7 +59,7 @@ const Video = ({ video }) => {
           type="text/html"
           width="100%"
           height="360"
-          src={`http://www.youtube.com/embed/${router.query.videoId}?autoplay=0&origin=http://example.com&controls=0&rel=0`}
+          src={`http://www.youtube.com/embed/${videoId}?autoplay=0&origin=http://example.com&controls=0&rel=0`}
           frameBorder="0"
           >
         </iframe>
