@@ -8,9 +8,13 @@ import { getPopularVideos, getVideos } from "../lib/videos";
 
 export async function getServerSideProps() {
   const disneyVideos = await getVideos("disney trailer");
+
   const productivityVideos = await getVideos("productivity");
+
   const travelVideos = await getVideos("indie music");
+  
   const popularVideos = await getPopularVideos();
+
   return {
     props: {
       disneyVideos,
