@@ -1,12 +1,17 @@
+import jwt from 'jsonwebtoken';
+
 export default async function stats(req, resp) {
   if (req.method === "POST") {
     console.log({ cookies: req.cookies });
 
     try {
-      if (!req.cookies.token) {
+			const token = req.cookies.token;
+      if (!token) {
         resp.status(403).send({});
       } else {
-        resp.send({ msg: "It works" });
+				const decoded = jwt.verify(token, process.env.JWT_SECRET);
+				console.log({ decoded })
+        resp.send({ msg: "It works", decoded });
       }
     } catch (error) {
 			console.log('Error occured /stats', error)
