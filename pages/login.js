@@ -53,7 +53,7 @@ const Login = () => {
           const response = await fetch("/api/login", {
             method: "POST",
             headers: {
-              Authorization: `Bearer ${didToken}`,
+              "Authorization": `Bearer ${didToken}`,
               "Content-Type": "application/json",
             },
           });

@@ -16,9 +16,13 @@ export default async function stats(req, resp) {
 				console.log({ decodedToken })
 
         const userId = decodedToken.issuer;
-
-        const findVideoId = await findVideoIdByUser(token, userId, videoId);
-        resp.send({ msg: "It works", decodedToken, findVideoId});
+        const doesStatsExists = await findVideoIdByUser(token, userId, videoId);
+        if (doesStatsExists) {
+          // update it
+        } else {
+          // add it
+        }
+        resp.send({ msg: "It works", decodedToken, findVideoIdByUser});
       }
     } catch (error) {
 			console.log('Error occured /stats', error)
