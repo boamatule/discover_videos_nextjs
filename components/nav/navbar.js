@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
-import Link from 'next/link';
 import Image from 'next/image';
 import styles from './navbar.module.css';
 import { magic } from '../../lib/magic-client';
@@ -14,7 +13,7 @@ const Navbar = () => {
 
 	useEffect(async () => {
 		try {
-			const { email, issuer } = await magic.user.getMetadata();
+			const { email } = await magic.user.getMetadata();
 			const didToken = await magic.user.getIdToken();
 			console.log({ didToken });
 			if (email) {

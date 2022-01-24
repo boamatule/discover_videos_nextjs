@@ -1,11 +1,13 @@
+import jwt from 'jsonwebtoken';
 import {
   findVideoIdByUser,
 } from "../../lib/db/hasura";
 
-import jwt from 'jsonwebtoken';
 
 export default async function stats(req, resp) {
   if (req.method === "POST") {
+    console.log({ cookies: req.cookies });
+
     try {
 			const token = req.cookies.token;
       if (!token) {
