@@ -6,7 +6,7 @@ import {
 
 export default async function stats(req, resp) {
   if (req.method === "POST") {
-    console.log({ cookies: req.cookies });
+    // console.log({ cookies: req.cookies });
 
     try {
 			const token = req.cookies.token;
@@ -15,16 +15,21 @@ export default async function stats(req, resp) {
       } else {
         const videoId = req.query.videoId;
 				const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
-				console.log({ decodedToken })
+
+				// console.log({ decodedToken })
 
         const userId = decodedToken.issuer;
-        const doesStatsExists = await findVideoIdByUser(token, userId, videoId);
+        const doesStatsExists = await findVideoIdByUser
+        (token, userId, videoId);
+        console.log({doesStatsExists })
+  
         if (doesStatsExists) {
           // update it
+          
         } else {
           // add it
         }
-        resp.send({ msg: "It works", decodedToken, findVideoIdByUser});
+        resp.send({ msg: "It works", decodedToken, doesStatsExists });
       }
     } catch (error) {
 			console.log('Error occured /stats', error)

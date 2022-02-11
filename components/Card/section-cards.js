@@ -1,21 +1,23 @@
 import Link from "next/link";
 import Card from "./card";
+import clsx from "classnames";
 import styles from "./section-cards.module.css";
 
 const SectionCards = (props) => {
   const { title, videos = [], size } = props;
-
-  console.log({ videos });
   return (
     <section className={styles.container}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.cardWrapper}>
         {videos.map((video, idx) => {
           return (
-            // eslint-disable-next-line react/jsx-key
             <Link href={`/video/${video.id}`}>
               <a>
-                <Card id={idx} imgUrl={video.imgUrl} size={size} />
+                <Card
+                  id={idx}
+                  imgUrl={video.imgUrl}
+                  size={size}
+                />
               </a>
             </Link>
           );

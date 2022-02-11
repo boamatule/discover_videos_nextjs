@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { motion } from 'framer-motion'
 import cls from 'classnames';
@@ -15,7 +14,6 @@ const Card = (props) => {
 	} = props;
 
 	const [imgSrc, setImgSrc] = useState(imgUrl);
-	
 	const classMap = {
 		'large': styles.lgItem,
 		'medium': styles.mdItem,
