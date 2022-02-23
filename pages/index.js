@@ -11,12 +11,11 @@ import {
 	getWatchItAgainVideos,
 } from "../lib/videos";
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+	const token = context.req.cookies.token;
+	console.log({ token })
 	const userId = "did:ethr:0x4C5f589E65C59dC2a17fCBC45Fd2E5342f58e677";
-	const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3N1ZXIiOiJkaWQ6ZXRocjoweDRDNWY1ODlFNjVDNTlkQzJhMTdmQ0JDNDVGZDJFNTM0MmY1OGU2NzciLCJwdWJsaWNBZGRyZXNzIjoiMHg0QzVmNTg5RTY1QzU5ZEMyYTE3ZkNCQzQ1RmQyRTUzNDJmNThlNjc3IiwiZW1haWwiOiJib2EubWF0dWxlQGdtYWlsLmNvbSIsIm9hdXRoUHJvdmlkZXIiOm51bGwsInBob25lTnVtYmVyIjpudWxsLCJpYXQiOjE2NDU2Mzk3MzIsImV4cCI6MTY0NjI0NDUzMiwiaHR0cHM6Ly9oYXN1cmEuaW8vand0L2NsYWltcyI6eyJ4LWhhc3VyYS1hbGxvd2VkLXJvbGVzIjpbInVzZXIiLCJhZG1pbiJdLCJ4LWhhc3VyYS1kZWZhdWx0LXJvbGUiOiJ1c2VyIiwieC1oYXN1cmEtdXNlci1pZCI6ImRpZDpldGhyOjB4NEM1ZjU4OUU2NUM1OWRDMmExN2ZDQkM0NUZkMkU1MzQyZjU4ZTY3NyJ9fQ.RPjhEgTYhEt3BHcSuRusbanHejyNmFZlgPAK-yLE9Yw"
 	const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
-
-	console.log({ watchItAgainVideos });
 	
 	const disneyVideos = await getVideos("disney trailer");
 	const productivityVideos = await getVideos("productivity");
