@@ -14,6 +14,7 @@ import {
 export async function getServerSideProps() {
 	const userId = "did:ethr:0x4C5f589E65C59dC2a17fCBC45Fd2E5342f58e677";
 	const token = "WyIweDYwZTc3ZjBjZTJjYzQ3NTc0OWM0MTk3OWU3ZjMyMWI1MzgzNDdlZDEzZmM1YzA1YmNmZjZjMWExMTI0NmE3ZmE2OThhM2VjMzM3YjhjMWI1MGI5MmYzNjZmMmZjNzQxMGM2ZDQ4OTNlNDk3ZTBjZTI0YjkwZmIyOTUzNWZlZmFmMWIiLCJ7XCJpYXRcIjoxNjQ1NjMzMjE4LFwiZXh0XCI6MTY0NTYzNDExOCxcImlzc1wiOlwiZGlkOmV0aHI6MHg0QzVmNTg5RTY1QzU5ZEMyYTE3ZkNCQzQ1RmQyRTUzNDJmNThlNjc3XCIsXCJzdWJcIjpcIjVRaXN0U0ZoQmxPUjhyYWdiS3R3VTZCUXZSRHFhbktoTURiZGQzRVNkblk9XCIsXCJhdWRcIjpcIkU2dG0ydWpYdVQwemtsXzBGOUxONXM4NGIzQm1JRlRpN3FYQVNZeVhaRGc9XCIsXCJuYmZcIjoxNjQ1NjMzMjE4LFwidGlkXCI6XCJhMDgwZTMyMi04ZTRlLTQ3NzUtYWMzZi1lNzBhZTgzMDQyNmNcIixcImFkZFwiOlwiMHg0YTRiM2VhN2E0ZThiNGVlZjRiYTAzNmMwYmY3ODU5MGJjNmM4Zjk2ODdkNGVjNTI3NDYyOTZkMGJjMzkzYWE5MDA4YTJiMzg3YzQwMDkwNGM0ODI3ZTlkMWIyYzdiMmQ5YjBjMzFkZGViN2I4ZWYzZmU4MzFhOGU5NWQ2N2RlYTFjXCJ9Il0=";
+  
 	const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
 
 	console.log({ watchItAgainVideos });
@@ -24,20 +25,21 @@ export async function getServerSideProps() {
 
 	return {
 		props: {
-			// watchItAgainVideos,
-			disneyVideos,
-			productivityVideos,
-			travelVideos,
-			popularVideos,
+      disneyVideos,
+      travelVideos,
+      productivityVideos,
+      popularVideos,
+      watchItAgainVideos,
 		},
 	};
 }
 
 export default function Home({
-	disneyVideos,
-	productivityVideos,
-	travelVideos,
-	popularVideos,
+  disneyVideos,
+  travelVideos,
+  productivityVideos,
+  popularVideos,
+  watchItAgainVideos,
 }) {
 	return (
 		<div className={styles.container}>
@@ -57,9 +59,21 @@ export default function Home({
 				/>
 
 				<div className={styles.sectionWrapper}>
-					<SectionCards title="Disney" videos={disneyVideos} size="large" />
-
-					<SectionCards title="Travel" videos={travelVideos} size="small" />
+					<SectionCards 
+						title="Disney" 
+						videos={disneyVideos} 
+						size="large" 
+					/>
+					<SectionCards 
+						title="Watch it again" 
+						videos={watchItAgainVideos} 
+						size="small" 
+					/>
+					<SectionCards 
+						title="Travel" 
+						videos={travelVideos} 
+						size="small" 
+					/>
 					<SectionCards
 						title="Productivity"
 						videos={productivityVideos}
