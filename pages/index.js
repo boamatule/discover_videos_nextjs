@@ -10,25 +10,14 @@ import {
 	getVideos,
 	getWatchItAgainVideos,
 } from "../lib/videos";
-import { verifyToken } from "../lib/utils";
+import userRedirectUser from "../utils/redirectUser";
 
 export async function getServerSideProps(context) {
-	const token = context.req ? context.req?.cookies.token : null;
-
-	const userId = verifyToken(token);
-
-	if (!userId) {
-    return {
-			props: {},
-      redirect: {
-        destination: '/login',
-        permanent: false,
-      },
-    }
-  }
+	const { userId, token } = userRedirectUser(context);
 
 	const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
-	
+	console.log({ watchItAgainVideos });
+
 	const disneyVideos = await getVideos("disney trailer");
 	const productivityVideos = await getVideos("productivity");
 	const travelVideos = await getVideos("indie music");
@@ -36,21 +25,21 @@ export async function getServerSideProps(context) {
 
 	return {
 		props: {
-      disneyVideos,
-      travelVideos,
-      productivityVideos,
-      popularVideos,
-      watchItAgainVideos,
+			disneyVideos,
+			travelVideos,
+			productivityVideos,
+			popularVideos,
+			watchItAgainVideos,
 		},
 	};
 }
 
 export default function Home({
-  disneyVideos,
-  travelVideos,
-  productivityVideos,
-  popularVideos,
-  watchItAgainVideos,
+	disneyVideos,
+	travelVideos,
+	productivityVideos,
+	popularVideos,
+	watchItAgainVideos,
 }) {
 	return (
 		<div className={styles.container}>
@@ -70,21 +59,13 @@ export default function Home({
 				/>
 
 				<div className={styles.sectionWrapper}>
-					<SectionCards 
-						title="Disney" 
-						videos={disneyVideos} 
-						size="large" 
+					<SectionCards title="Disney" videos={disneyVideos} size="large" />
+					<SectionCards
+						title="Watch it again"
+						videos={watchItAgainVideos}
+						size="small"
 					/>
-					<SectionCards 
-						title="Watch it again" 
-						videos={watchItAgainVideos} 
-						size="small" 
-					/>
-					<SectionCards 
-						title="Travel" 
-						videos={travelVideos} 
-						size="small" 
-					/>
+					<SectionCards title="Travel" videos={travelVideos} size="small" />
 					<SectionCards
 						title="Productivity"
 						videos={productivityVideos}
