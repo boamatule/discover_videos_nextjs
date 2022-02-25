@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Banner from "../components/banner/banner";
 import Navbar from "../components/nav/navbar";
+
 import SectionCards from "../components/Card/section-cards";
 
 import styles from "../styles/Home.module.css";
@@ -10,10 +11,22 @@ import {
 	getVideos,
 	getWatchItAgainVideos,
 } from "../lib/videos";
-import userRedirectUser from "../utils/redirectUser";
+
+import useRedirectUser from "../utils/redirectUser";
 
 export async function getServerSideProps(context) {
-	const { userId, token } = userRedirectUser(context);
+	// eslint-disable-next-line react-hooks/rules-of-hooks
+	const { userId, token } = await useRedirectUser(context);
+
+	if (!userId) {
+		return {
+			props: {},
+			redirect: {
+				destination: "/login",
+				permanent: false,
+			},
+		};
+	}
 
 	const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
 	console.log({ watchItAgainVideos });

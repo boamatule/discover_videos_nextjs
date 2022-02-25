@@ -1,10 +1,26 @@
 import Head from "next/head";
-import SectionCards from "../../components/Card/section-cards";
 import Navbar from "../../components/nav/navbar";
 
+import SectionCards from "../../components/Card/section-cards";
+import useRedirectUser from "../../utils/redirectUser";
+
+import { getMyList } from "../../lib/videos";
 import styles from "../../styles/MyList.module.css";
 
-const MyList = () => {
+
+export async function getServerSideProps(context) {
+	// eslint-disable-next-line react-hooks/rules-of-hooks
+	const { userId, token } = await useRedirectUser(context);
+	const videos = await getMyList(userId, token);
+
+	return {
+		props: {
+			myListVideos: videos,
+		},
+	};
+}
+
+const MyList = ({ myListVideos }) => {
 	return (
 		<div>
 			<Head>
@@ -13,11 +29,13 @@ const MyList = () => {
 			<main className={styles.main}>
 				<Navbar />
 				<div className={styles.sectionWrapper}>
-					<SectionCards
-						title="My List"
-						videos={[]}
-						size="small"
-					/>
+					<SectionCards 
+            title="My List" 
+            videos={myListVideos} 
+            size="small"
+						shouldWrap
+						shouldScale={false}
+          />
 				</div>
 			</main>
 		</div>

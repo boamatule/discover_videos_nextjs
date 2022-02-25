@@ -11,6 +11,7 @@ const Navbar = () => {
 
 	const router = useRouter();
 
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	useEffect(async () => {
 		try {
 			const { email } = await magic.user.getMetadata();

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import { useRouter } from "next/router";
 import Modal from "react-modal";
 import styles from "../../styles/Video.module.css";
@@ -54,8 +55,7 @@ const Video = ({ video }) => {
       method: "GET",
     });
     const data = await response.json();
-    
-    console.log({ data });
+
     if (data.length > 0) {
       const favourited = data[0].favourited;
       if (favourited === 1) {
