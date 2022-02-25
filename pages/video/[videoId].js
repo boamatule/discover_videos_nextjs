@@ -50,6 +50,7 @@ const Video = ({ video }) => {
     statistics: { viewCount } = { viewCount: 0 },
   } = video;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
     const response = await fetch(`/api/stats?videoId=${videoId}`, {
       method: "GET",
@@ -64,7 +65,7 @@ const Video = ({ video }) => {
         setToggleDisLike(true);
       }
     }
-  }, []);
+  }, [videoId]);
 
   const runRatingService = async (favourited) => {
     return await fetch("/api/stats", {

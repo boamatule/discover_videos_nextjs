@@ -28,7 +28,7 @@ export default async function stats(req, resp) {
 							videoId,
 							favourited,
 						});
-						resp.send({ data: response });
+						resp.send({ data: response, msg: "It works"  });
 					} else {
 						// add it
 						const response = await insertStats(token, {
