@@ -6,12 +6,18 @@ export async function middleware(req) {
   const userId = await verifyToken(token);
 
   const { pathname } = req.nextUrl;
+	console.log({ pathname })
 
-  if((token && userId) || pathname.includes('/api/login')) {
+  // if((token && userId) || pathname.includes('/api/login')) {
+  //   return NextResponse.next();
+  // }
+
+	if(pathname.includes('/api/login') || userId || pathname.includes('/static')) {
     return NextResponse.next();
   }
 
   if (!token && pathname !== '/login') {
-    return NextResponse.rewrite(new URL('/login', req.url));
+		return NextResponse.redirect(new URL('/login', req.url));
+    // return NextResponse.rewrite(new URL('/login', req.url));
   }
 }
