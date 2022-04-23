@@ -17,6 +17,15 @@ import { verifyToken } from "../lib/utils";
 
 export async function getServerSideProps(context) {
 	const { userId, token } = await useRedirectUser(context);
+	if (!userId) {
+		return {
+			props: {},
+			redirect: {
+				destination: "/login",
+				permanent: false,
+			},
+		};
+	}
 
 	const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
 
