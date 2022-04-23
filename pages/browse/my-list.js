@@ -7,7 +7,6 @@ import { getMyList } from "../../lib/videos";
 import styles from "../../styles/MyList.module.css";
 
 export async function getServerSideProps(context) {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { userId, token } = await useRedirectUser(context);
   const videos = await getMyList(userId, token);
 
@@ -19,8 +18,6 @@ export async function getServerSideProps(context) {
 }
 
 const MyList = ({ myListVideos }) => {
-  console.log({myListVideos})
-
   return (
     <div>
       <Head>
