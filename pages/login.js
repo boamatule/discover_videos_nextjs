@@ -33,7 +33,6 @@ const Login = () => {
 
   const handleOnChangeEmail = (e) => {
     setUserMsg("");
-    // console.log("event", e);
     const email = e.target.value;
     setEmail(email);
   };
