@@ -13,7 +13,6 @@ import {
 } from "../lib/videos";
 
 import useRedirectUser from "../utils/redirectUser";
-import { verifyToken } from "../lib/utils";
 
 export async function getServerSideProps(context) {
 	// eslint-disable-next-line react-hooks/rules-of-hooks
