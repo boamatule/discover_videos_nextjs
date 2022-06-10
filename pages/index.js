@@ -16,16 +16,17 @@ import useRedirectUser from "../utils/redirectUser";
 import { verifyToken } from "../lib/utils";
 
 export async function getServerSideProps(context) {
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const { userId, token } = await useRedirectUser(context);
-	if (!userId) {
-		return {
-			props: {},
-			redirect: {
-				destination: "/login",
-				permanent: false,
-			},
-		};
-	}
+	// if (!userId) {
+	// 	return {
+	// 		props: {},
+	// 		redirect: {
+	// 			destination: "/login",
+	// 			permanent: false,
+	// 		},
+	// 	};
+	// }
 
 	const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
 
