@@ -9,6 +9,20 @@ import styles from "../../styles/MyList.module.css";
 export async function getServerSideProps(context) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { userId, token } = await useRedirectUser(context);
+<<<<<<< HEAD
+=======
+
+  // if (!userId) {
+	// 	return {
+	// 		props: {},
+	// 		redirect: {
+	// 			destination: "/login",
+	// 			permanent: false,
+	// 		},
+	// 	};
+	// }
+  
+>>>>>>> development
   const videos = await getMyList(userId, token);
 
   return {

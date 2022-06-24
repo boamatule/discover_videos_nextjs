@@ -1,8 +1,7 @@
 module.exports = {
-  reactStrictMode: true,
-  webpack(config) {
-    config.infrastructureLogging = { debug: /PackFileCache/ }
-    return config;
+  experimental: {
+    runtime: 'nodejs',
+    serverComponents: true,
   },
   images: {
     domains: ["images.unsplash.com", "i.ytimg.com"]
