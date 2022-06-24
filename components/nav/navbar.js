@@ -11,14 +11,13 @@ const Navbar = () => {
 
 	const router = useRouter();
 
-	// eslint-disable-next-line react-hooks/exhaustive-deps
-	useEffect(async () => {
+	useEffect(async function () {
 		try {
 			const { email } = await magic.user.getMetadata();
 			const didToken = await magic.user.getIdToken();
 			if (email) {
 				setUsername(email);
-			}			
+			}
 		} catch (error) {
 			console.error('Error retrieving email', error);
 		}

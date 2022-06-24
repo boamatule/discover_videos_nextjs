@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-import { verifyToken } from "../lib/utils";
+import { verifyToken } from "./lib/utils";
 
 
-export async function middleware(req, ev) {
+export async function middleware(req, ev, NextResponse) {
 	console.log({ req, ev });
 	const token = req ? req.cookies?.token : null;
 	const userId = await verifyToken(token);

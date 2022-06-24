@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 
 import { useRouter } from "next/router";
@@ -51,7 +50,6 @@ const Video = ({ video }) => {
     statistics: { viewCount } = { viewCount: 0 },
   } = video;
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
     const response = await fetch(`/api/stats?videoId=${videoId}`, {
       method: "GET",

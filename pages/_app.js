@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
 	
 	useEffect(() => {
-		const handleComplete = () => {
+		function handleComplete() {
 			setIsLoading(false);
 		}
 		router.events.on('routeChangeComplete',
