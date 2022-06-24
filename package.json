@@ -22,20 +22,10 @@
     "jwa": "^2.0.0",
     "jws": "^4.0.0",
     "magic-sdk": "^7.0.0",
-<<<<<<< HEAD
-    "next": "12",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-modal": "^3.14.4",
-    "sharp": "^0.30.6",
-    "stream": "^0.0.2",
-    "swc-loader": "^0.2.1"
-=======
     "next": "^12.1.7-canary.46",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.14.4"
->>>>>>> development
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
