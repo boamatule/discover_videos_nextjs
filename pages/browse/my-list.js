@@ -4,10 +4,8 @@ import NavBar from "../../components/nav/navbar";
 import SectionCards from "../../components/card/section-cards";
 import useRedirectUser from "../../utils/redirectUser";
 import { getMyList } from "../../lib/videos";
-import styles from "../../styles/MyList.module.css";
 
 export async function getServerSideProps(context) {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { userId, token } = await useRedirectUser(context);
 
   // if (!userId) {
@@ -19,8 +17,8 @@ export async function getServerSideProps(context) {
 	// 		},
 	// 	};
 	// }
-  
   const videos = await getMyList(userId, token);
+
 
   return {
     props: {
@@ -33,7 +31,7 @@ const MyList = ({ myListVideos }) => {
   return (
     <div>
       <Head>
-        <title>My list</title>
+        <styles />
       </Head>
       <main className={styles.main}>
         <NavBar />
