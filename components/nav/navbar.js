@@ -11,16 +11,33 @@ const Navbar = () => {
 
 	const router = useRouter();
 
-	useEffect(async () => {
-		try {
-			const { email } = await magic.user.getMetadata();
-			const didToken = await magic.user.getIdToken();
-			if (email) {
-				setUsername(email);
-			}			
-		} catch (error) {
-			console.error('Error retrieving email', error);
-		}
+	// useEffect(async () => {
+	// 	try {
+	// 		const { email } = await magic.user.getMetadata();
+	// 		const didToken = await magic.user.getIdToken();
+	// 		if (email) {
+	// 			setUsername(email);
+	// 		}			
+	// 	} catch (error) {
+	// 		console.error('Error retrieving email', error);
+	// 	}
+	// }, []);
+
+		useEffect(() => {
+		const fetchUserData = async () => {
+			try {
+				const { email } = await magic.user.getMetadata();
+				const didToken = await magic.user.getIdToken();
+				console.log({ didToken })
+				if (email) {
+					setUsername(email);
+          setDidToken(didToken);
+				}
+			} catch (error) {
+				console.error("Error retrieving email", error);
+			}
+		};
+		fetchUserData;
 	}, []);
 
 	function handleOnClickHome(e) {
