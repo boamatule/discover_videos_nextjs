@@ -51,21 +51,44 @@ const Video = ({ video }) => {
   } = video;
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(async () => {
-    const response = await fetch(`/api/stats?videoId=${videoId}`, {
-      method: "GET",
-    });
-    const data = await response.json();
+  // useEffect(async () => {
+  //   const response = await fetch(`/api/stats?videoId=${videoId}`, {
+  //     method: "GET",
+  //   });
+  //   const data = await response.json();
 
-    if (data.length > 0) {
-      const favourited = data[0].favourited;
-      if (favourited === 1) {
-        setToggleLike(true);
-      } else if (favourited === 0) {
-        setToggleDisLike(true);
-      }
-    }
-  }, []);
+  //   if (data.length > 0) {
+  //     const favourited = data[0].favourited;
+  //     if (favourited === 1) {
+  //       setToggleLike(true);
+  //     } else if (favourited === 0) {
+  //       setToggleDisLike(true);
+  //     }
+  //   }
+  // }, []);
+
+	useEffect(() => {
+		const fetchVideoData = async () => {
+			try {
+				const response = await fetch(`/api/stats?videoId=${videoId}`, {
+					method: "GET",
+				});
+				const data = await response.json();
+				if (data.length > 0) {
+					const favourited = data[0].favourited;
+					if (favourited === 1) {
+						setToggleLike(true);
+					} else if (favourited === 0) {
+						setToggleDisLike(true);
+					}
+				}
+			} catch (e) {
+				console.error(e);
+			}
+		};
+		fetchVideoData();
+	}, [videoId]);
+
 
   const runRatingService = async (favourited) => {
     return await fetch("/api/stats", {
