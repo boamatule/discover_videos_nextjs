@@ -11,7 +11,6 @@ const SectionCards = (props) => {
       <div className={clsx(styles.cardWrapper, shouldWrap && styles.wrap)}>
         {videos.map((video, idx) => {
           return (
-            // eslint-disable-next-line react/jsx-key
             <Link href={`/video/${video.id}`}>
               <a>
                 <Card

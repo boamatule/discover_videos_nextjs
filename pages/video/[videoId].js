@@ -50,21 +50,24 @@ const Video = ({ video }) => {
 		statistics: { viewCount } = { viewCount: 0 },
 	} = video;
 
-	// useEffect(async () => {
-	// 	const response = await fetch(`/api/stats?videoId=${videoId}`, {
-	// 		method: "GET",
-	// 	});
-	// 	const data = await response.json();
+  useEffect(() => {
+    const handleLikeDislikeService = async () => {
+      const response = await fetch(`/api/stats?videoId=${videoId}`, {
+        method: "GET",
+      });
+      const data = await response.json();
 
-	// 	if (data.length > 0) {
-	// 		const favourited = data[0].favourited;
-	// 		if (favourited === 1) {
-	// 			setToggleLike(true);
-	// 		} else if (favourited === 0) {
-	// 			setToggleDisLike(true);
-	// 		}
-	// 	}
-	// }, []);
+      if (data.length > 0) {
+        const favourited = data[0].favourited;
+        if (favourited === 1) {
+          setToggleLike(true);
+        } else if (favourited === 0) {
+          setToggleDisLike(true);
+        }
+      }
+    };
+    handleLikeDislikeService();
+  }, [videoId]);
 
 	useEffect(() => {
 		const fetchVideoData = async () => {
@@ -178,3 +181,26 @@ const Video = ({ video }) => {
 };
 
 export default Video;
+
+
+// useEffect(() => {
+//   const fetchVideoData = async () => {
+//     try {
+//       const response = await fetch(`/api/stats?videoId=${videoId}`, {
+//         method: "GET",
+//       });
+//       const data = await response.json();
+//       if (data.length > 0) {
+//         const favourited = data[0].favourited;
+//         if (favourited === 1) {
+//           setToggleLike(true);
+//         } else if (favourited === 0) {
+//           setToggleDisLike(true);
+//         }
+//       }
+//     } catch (e) {
+//       console.error(e);
+//     }
+//   };
+//   fetchVideoData();
+// }, [videoId]);
