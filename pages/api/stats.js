@@ -4,16 +4,20 @@ import {
 	insertStats,
 } from "../../lib/db/hasura";
 import { verifyToken } from "../../lib/utils";
+import jwt from "jsonwebtoken";
 
 export default async function stats(req, resp) {
 	if (req.method === "POST") {
 		console.log({ cookies: req.cookies });
 
 		try {
+			const token = req.cookies.token;
 			if (!req.cookies.token) {
 				resp.status(403).send({});
 			} else {
-				resp.send({ msg: "It works" });
+				const decoded = jwt.verify(token, process.env.JWT_SECRET);
+				console.log({ decoded });
+				resp.send({ msg: "It works", decoded });
 			}
 		} catch (error) {
 			console.error("Error occurred /stats", error);
