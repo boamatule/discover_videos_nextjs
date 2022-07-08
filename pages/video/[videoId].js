@@ -89,12 +89,10 @@ const Video = ({ video }) => {
     const val = !toggleDisLike;
     const favourited = val ? 0 : 1;
     const response = await runRatingService(favourited);
-    console.log("data", await response.json());
 
   };
 
   const handleToggleLike = async () => {
-    console.log("handleToggleLike")
     const val = !toggleLike;
     setToggleLike(val);
     setToggleDisLike(toggleLike);
