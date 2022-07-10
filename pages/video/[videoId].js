@@ -50,12 +50,14 @@ const Video = ({ video }) => {
     statistics: { viewCount } = { viewCount: 0 },
   } = video;
 
-  useEffect(() => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(async() => {
     const handleLikeDislikeService = async () => {
       const response = await fetch(`/api/stats?videoId=${videoId}`, {
-        method: "GET",
+        method: "GET"
       });
       const data = await response.json();
+      console.log({ data })
 
       if (data.length > 0) {
         const favourited = data[0].favourited;
