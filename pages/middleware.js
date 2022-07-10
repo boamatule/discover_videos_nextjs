@@ -1,6 +1,5 @@
-// eslint-disable-next-line @next/next/no-server-import-in-page
 import { NextResponse } from "next/server";
-import { verifyToken } from "../lib/utils"
+import { verifyToken } from "../lib/utils";
 
 export async function middleware(req) {
   const token = req ? req.cookies?.token : null;

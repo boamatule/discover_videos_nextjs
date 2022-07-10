@@ -47,7 +47,7 @@ const Video = ({ video }) => {
     publishTime,
     description,
     channelTitle,
-    statistics: { viewCount } = { viewCount: 0 },
+    statistics: { viewCount },
   } = video;
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
