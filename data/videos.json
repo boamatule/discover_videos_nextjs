@@ -1,6 +1,6 @@
 {
   "kind": "youtube#searchListResponse",
-  "etag": "IY_4Avh8-eltuuTkbRnn2NjYxSg",
+  "etag": "rblu_yGqprAMRo1CtsOAmR6oHQE",
   "nextPageToken": "CBkQAA",
   "regionCode": "NO",
   "pageInfo": {
@@ -10,36 +10,36 @@
   "items": [
     {
       "kind": "youtube#searchResult",
-      "etag": "aoNAW375giYzHBF91VYS12cupIM",
+      "etag": "sqs8XoQv9fA4UZWWvf1s92O0ERU",
       "id": {
         "kind": "youtube#video",
-        "videoId": "DM_XwzOK_98"
+        "videoId": "CaimKeDcudo"
       },
       "snippet": {
-        "publishedAt": "2022-07-07T15:00:08Z",
-        "channelId": "UCjnYk44Aj9E634TPucpIXnQ",
-        "title": "Light &amp; Magic | Official Trailer | Disney+",
-        "description": "Anything is possible. Light & Magic, a six-part series about @Industrial Light & Magic, starts streaming July 27 on @Disney Plus.",
+        "publishedAt": "2021-09-29T13:00:05Z",
+        "channelId": "UC_976xMxPgzIa290Hqtk-9g",
+        "title": "Disney&#39;s Encanto | Official Trailer",
+        "description": "This November, find your magic. ✨   Watch the brand-new trailer for Disney's Encanto, coming to theaters this Thanksgiving.",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/DM_XwzOK_98/default.jpg",
+            "url": "https://i.ytimg.com/vi/CaimKeDcudo/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/DM_XwzOK_98/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/CaimKeDcudo/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/DM_XwzOK_98/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/CaimKeDcudo/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Industrial Light & Magic",
+        "channelTitle": "Walt Disney Animation Studios",
         "liveBroadcastContent": "none",
-        "publishTime": "2022-07-07T15:00:08Z"
+        "publishTime": "2021-09-29T13:00:05Z"
       }
     },
     {
@@ -78,74 +78,6 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "sqs8XoQv9fA4UZWWvf1s92O0ERU",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "CaimKeDcudo"
-      },
-      "snippet": {
-        "publishedAt": "2021-09-29T13:00:05Z",
-        "channelId": "UC_976xMxPgzIa290Hqtk-9g",
-        "title": "Disney&#39;s Encanto | Official Trailer",
-        "description": "This November, find your magic. ✨   Watch the brand-new trailer for Disney's Encanto, coming to theaters this Thanksgiving.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/CaimKeDcudo/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/CaimKeDcudo/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/CaimKeDcudo/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Walt Disney Animation Studios",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-09-29T13:00:05Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "MreFXmMNujQbTgYnXYlZpDW8G3M",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "ecJRvz9nk-U"
-      },
-      "snippet": {
-        "publishedAt": "2022-06-28T12:00:32Z",
-        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
-        "title": "Teaser Trailer | Hocus Pocus 2 | Disney+",
-        "description": "This Halloween Season, some legends never die. Hocus Pocus 2, an Original movie event, streaming September 30 on Disney ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/ecJRvz9nk-U/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/ecJRvz9nk-U/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/ecJRvz9nk-U/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Walt Disney Studios",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-06-28T12:00:32Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
       "etag": "5zOJLIlPP7UxrQGktOJYwFgUnxQ",
       "id": {
         "kind": "youtube#video",
@@ -176,6 +108,74 @@
         "channelTitle": "Walt Disney Studios",
         "liveBroadcastContent": "none",
         "publishTime": "2022-05-31T12:45:36Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "wHVb59JxpfNziVeKP8R9CvKOWIg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "irSBpAAgX10"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-11T16:25:49Z",
+        "channelId": "UCzauGwJ4mP1ZR7oZxBSa8eA",
+        "title": "The Kardashians | Season 2 Official Trailer | Disney+",
+        "description": "Season 2? Count us in. The second season of #TheKardashians is streaming September 22 on #DisneyPlus.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/irSBpAAgX10/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/irSBpAAgX10/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/irSBpAAgX10/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios Canada",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-11T16:25:49Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "IQXms1NdKV-AafkxzIUJCCQPXO0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Pwe_va9hPH0"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-14T07:00:04Z",
+        "channelId": "UC0PTktRYpZXb6On0_zFKWIg",
+        "title": "Good Luck Jerry Official Trailer | Janhvi Kapoor, Deepak D | July 29 | DisneyPlusHotstarMultiplex",
+        "description": "Jerry jitni bholi dikhti hain, utni hai nahi - chal padi hain ek adventure par, good luck nahi bolenge? #GoodLuckJerry trailer out ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Pwe_va9hPH0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Pwe_va9hPH0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Pwe_va9hPH0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "DisneyPlus Hotstar",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-14T07:00:04Z"
       }
     },
     {
@@ -214,36 +214,36 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "aZG0LuGQjZ7ffVP16A4yx0LPgQA",
+      "etag": "Wod4P4sb3-jAV08g_j2lmmWKa4s",
       "id": {
         "kind": "youtube#video",
-        "videoId": "f-Y99sxocZY"
+        "videoId": "begIGODDmAg"
       },
       "snippet": {
-        "publishedAt": "2022-07-07T15:30:56Z",
-        "channelId": "UCzauGwJ4mP1ZR7oZxBSa8eA",
-        "title": "Light &amp; Magic | Official Trailer | Disney+",
-        "description": "Anything is possible. Light & Magic, a six-part series about Industrial Light & Magic, starts streaming July 27 on #DisneyPlus.",
+        "publishedAt": "2021-10-11T17:12:53Z",
+        "channelId": "UCBH4HCPqGYZ0Yr6peYP0yag",
+        "title": "Encanto - Trailer Italiano Ufficiale",
+        "description": "Scopri la magia che è in te ✨   Guarda il nuovo trailer del film Disney #Encanto, al cinema dal 24 novembre! Seguici anche su ...",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/f-Y99sxocZY/default.jpg",
+            "url": "https://i.ytimg.com/vi/begIGODDmAg/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/f-Y99sxocZY/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/begIGODDmAg/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/f-Y99sxocZY/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/begIGODDmAg/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Walt Disney Studios Canada",
+        "channelTitle": "Disney IT",
         "liveBroadcastContent": "none",
-        "publishTime": "2022-07-07T15:30:56Z"
+        "publishTime": "2021-10-11T17:12:53Z"
       }
     },
     {
@@ -282,74 +282,6 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "4KruTETn3ZdZ0tuG-l2znePS__A",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "GsJd_o97h5U"
-      },
-      "snippet": {
-        "publishedAt": "2021-09-29T14:17:13Z",
-        "channelId": "UCunkR_ekffRWZppVa1E6tIA",
-        "title": "Encanto | Trailer Oficial | Disney",
-        "description": "Encontre a sua magia. ✨   Assista ao novo trailer de #Encanto da Disney. Em breve exclusivo nos cinemas. Site Oficial: ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/GsJd_o97h5U/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/GsJd_o97h5U/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/GsJd_o97h5U/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Disney Brasil",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-09-29T14:17:13Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "44nPcnli1MnlVNm8HfGdorfZd6o",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "q25hRul0rMc"
-      },
-      "snippet": {
-        "publishedAt": "2022-06-28T15:04:28Z",
-        "channelId": "UCP6nJ-Elnfnpjv6HQRsv1Cw",
-        "title": "Abracadabra 2 | Teaser Trailer Oficial Dublado | Disney+",
-        "description": "Algumas lendas nunca morrem. #Abracadabra2, um Filme Original, em 30 de setembro no #DisneyPlus.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/q25hRul0rMc/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/q25hRul0rMc/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/q25hRul0rMc/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Walt Disney Studios BR",
-        "liveBroadcastContent": "none",
-        "publishTime": "2022-06-28T15:04:28Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
       "etag": "BFfyKbItFQu7pahq6x_sVto9WdM",
       "id": {
         "kind": "youtube#video",
@@ -384,70 +316,36 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "U6bSZBf6_cuzJTcEm9MymLckJH4",
+      "etag": "FIeolYZjXGtV8R3w5xK-XqkC1o0",
       "id": {
         "kind": "youtube#video",
-        "videoId": "AbjDUpvSHV4"
+        "videoId": "efHOqav50DM"
       },
       "snippet": {
-        "publishedAt": "2021-11-17T14:37:06Z",
-        "channelId": "UCHjX8DEVy6ECIRpdGYzHBSA",
-        "title": "Turning Red | Officiële trailer | Disney NL",
-        "description": "It's gonna be Mei! Bekijk de gloednieuwe trailer van Disney en Pixar's #TurningRed, vanaf maart 2022 in de bioscoop.",
+        "publishedAt": "2022-07-11T23:43:50Z",
+        "channelId": "UCil1J8whcdsh-qXLGf06RDg",
+        "title": "The Kardashians | Season 2 Teaser | Disney+",
+        "description": "Season 2? Count us in. The second season of Star Original series, #TheKardashians is streaming September 22, only on ...",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/AbjDUpvSHV4/default.jpg",
+            "url": "https://i.ytimg.com/vi/efHOqav50DM/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/AbjDUpvSHV4/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/efHOqav50DM/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/AbjDUpvSHV4/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/efHOqav50DM/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Disney NL",
+        "channelTitle": "Disney Australia & New Zealand",
         "liveBroadcastContent": "none",
-        "publishTime": "2021-11-17T14:37:06Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "JsAzCa_gTq5N0S8eGaIWYTDXZ6c",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "mYfJxlgR2jw"
-      },
-      "snippet": {
-        "publishedAt": "2021-04-28T13:00:15Z",
-        "channelId": "UC_IRYSp4auq7hKLvziWVH6w",
-        "title": "Disney and Pixar’s Luca | Official Trailer | Disney+",
-        "description": "This summer, you're invited to Portorosso. Watch the new trailer for Disney and Pixar's Luca and see the film June 18 on Disney+.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/mYfJxlgR2jw/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/mYfJxlgR2jw/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/mYfJxlgR2jw/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Pixar",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-04-28T13:00:15Z"
+        "publishTime": "2022-07-11T23:43:50Z"
       }
     },
     {
@@ -486,70 +384,104 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "Wod4P4sb3-jAV08g_j2lmmWKa4s",
+      "etag": "U6bSZBf6_cuzJTcEm9MymLckJH4",
       "id": {
         "kind": "youtube#video",
-        "videoId": "begIGODDmAg"
+        "videoId": "AbjDUpvSHV4"
       },
       "snippet": {
-        "publishedAt": "2021-10-11T17:12:53Z",
-        "channelId": "UCBH4HCPqGYZ0Yr6peYP0yag",
-        "title": "Encanto - Trailer Italiano Ufficiale",
-        "description": "Scopri la magia che è in te ✨   Guarda il nuovo trailer del film Disney #Encanto, al cinema dal 24 novembre! Seguici anche su ...",
+        "publishedAt": "2021-11-17T14:37:06Z",
+        "channelId": "UCHjX8DEVy6ECIRpdGYzHBSA",
+        "title": "Turning Red | Officiële trailer | Disney NL",
+        "description": "It's gonna be Mei! Bekijk de gloednieuwe trailer van Disney en Pixar's #TurningRed, vanaf maart 2022 in de bioscoop.",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/begIGODDmAg/default.jpg",
+            "url": "https://i.ytimg.com/vi/AbjDUpvSHV4/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/begIGODDmAg/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/AbjDUpvSHV4/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/begIGODDmAg/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/AbjDUpvSHV4/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Disney IT",
+        "channelTitle": "Disney NL",
         "liveBroadcastContent": "none",
-        "publishTime": "2021-10-11T17:12:53Z"
+        "publishTime": "2021-11-17T14:37:06Z"
       }
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "viPtMAtNDmnVzvXgpJQPme4mttE",
+      "etag": "3TMD6MLmRCc2YnahwOK6IDnMIi8",
       "id": {
         "kind": "youtube#video",
-        "videoId": "QXY4A-dCE8I"
+        "videoId": "aUts14xyjHg"
       },
       "snippet": {
-        "publishedAt": "2022-06-28T14:53:07Z",
-        "channelId": "UC3uPK6zOTe0HOfcIkuzII0Q",
-        "title": "Abracadabra 2 | Teaser Tráiler Doblado | Disney+",
-        "description": "Las leyendas nunca mueren #Abracadabra2, Película Original, estreno 30 de septiembre en #DisneyPlus. ¡Haz clic en ...",
+        "publishedAt": "2021-09-29T13:22:36Z",
+        "channelId": "UCCPJwUM4ZwSwba5o5m6B0Ug",
+        "title": "Disney&#39;s Encanto | Official Trailer",
+        "description": "Uncover the mystery, find your magic ✨ Be swept away in the all-new trailer for Disney's Encanto: A Magical World! #EncantoPH ...",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/QXY4A-dCE8I/default.jpg",
+            "url": "https://i.ytimg.com/vi/aUts14xyjHg/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/QXY4A-dCE8I/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/aUts14xyjHg/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/QXY4A-dCE8I/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/aUts14xyjHg/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Disney+ Latinoamérica",
+        "channelTitle": "Walt Disney Studios Philippines",
         "liveBroadcastContent": "none",
-        "publishTime": "2022-06-28T14:53:07Z"
+        "publishTime": "2021-09-29T13:22:36Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KLqG6J9wJOK6Rm0F3TOdIiqyXS0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gRNvUmWq52I"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-14T14:00:24Z",
+        "channelId": "UCApaSzvP6jM9rfs8UbcqD1g",
+        "title": "Hora de Brilhar | Trailer Oficial | Disney+",
+        "description": "A inscrição na Feira Cultural do colégio pode mudar a vida da Ariana. ✨ #HoraDeBrilhar, um filme exclusivo. Em 29 de julho ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gRNvUmWq52I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gRNvUmWq52I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gRNvUmWq52I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney+ Brasil",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-14T14:00:24Z"
       }
     },
     {
@@ -588,70 +520,36 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "RJQtzrVz8w0o1jgaBcDSLc_eceM",
+      "etag": "MreFXmMNujQbTgYnXYlZpDW8G3M",
       "id": {
         "kind": "youtube#video",
-        "videoId": "Z_3qNZhNkxg"
+        "videoId": "ecJRvz9nk-U"
       },
       "snippet": {
-        "publishedAt": "2021-11-17T14:22:55Z",
-        "channelId": "UCQphRgAhj5UxktrQNP3WF5g",
-        "title": "Turning Red | Official Trailer | Disney UK",
-        "description": "Check out the new trailer and poster showcasing the upcoming all-new original feature film “Turning Red” from Pixar Animation ...",
+        "publishedAt": "2022-06-28T12:00:32Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Teaser Trailer | Hocus Pocus 2 | Disney+",
+        "description": "This Halloween Season, some legends never die. Hocus Pocus 2, an Original movie event, streaming September 30 on Disney ...",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/Z_3qNZhNkxg/default.jpg",
+            "url": "https://i.ytimg.com/vi/ecJRvz9nk-U/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/Z_3qNZhNkxg/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/ecJRvz9nk-U/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/Z_3qNZhNkxg/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/ecJRvz9nk-U/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Disney UK",
+        "channelTitle": "Walt Disney Studios",
         "liveBroadcastContent": "none",
-        "publishTime": "2021-11-17T14:22:55Z"
-      }
-    },
-    {
-      "kind": "youtube#searchResult",
-      "etag": "DhDgwlTzkkbGvPknjLgVha0eaNI",
-      "id": {
-        "kind": "youtube#video",
-        "videoId": "jLbo0-11ZBA"
-      },
-      "snippet": {
-        "publishedAt": "2021-04-28T13:27:38Z",
-        "channelId": "UCHjX8DEVy6ECIRpdGYzHBSA",
-        "title": "Luca | Officiële trailer | Disney+",
-        "description": "Ga op reis naar Portorosso deze zomer. 🏖️ Bekijk de nieuwe trailer van #PixarLuca en stream vanaf 18 juni exclusief op ...",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/jLbo0-11ZBA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/jLbo0-11ZBA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/jLbo0-11ZBA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Disney NL",
-        "liveBroadcastContent": "none",
-        "publishTime": "2021-04-28T13:27:38Z"
+        "publishTime": "2022-06-28T12:00:32Z"
       }
     },
     {
@@ -690,70 +588,70 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "iQvB-czR_lMf0S8_rlUDeov1XnQ",
+      "etag": "Pev5eCBF_og-S-nPxlDDi4bkN_E",
       "id": {
         "kind": "youtube#video",
-        "videoId": "bdH6itLQ9-0"
+        "videoId": "ZcHmQptuDEw"
       },
       "snippet": {
-        "publishedAt": "2021-09-29T13:14:47Z",
-        "channelId": "UCakQLdwrxuo0KhJ49Sq2csA",
-        "title": "Encanto, la fantastique famille Madrigal - Bande-annonce officielle | Disney",
-        "description": "Trouvez votre magie. Découvrez la nouvelle bande-annonce d'Encanto. Encanto, la fantastique famille Madrigal, dès le 24 ...",
+        "publishedAt": "2021-11-17T14:27:24Z",
+        "channelId": "UCnLMw4qns6879ipE7YuXpfg",
+        "title": "Disney and Pixar&#39;s Turning Red | Official Trailer",
+        "description": "It's gonna be Mei! Saksikan trailer Disney & Pixar's #TurningRedID dan nantikan aksi Mei di bioskop, 2022. Turning Red, a ...",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/bdH6itLQ9-0/default.jpg",
+            "url": "https://i.ytimg.com/vi/ZcHmQptuDEw/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/bdH6itLQ9-0/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/ZcHmQptuDEw/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/bdH6itLQ9-0/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/ZcHmQptuDEw/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Disney FR",
+        "channelTitle": "Walt Disney Studios Indonesia",
         "liveBroadcastContent": "none",
-        "publishTime": "2021-09-29T13:14:47Z"
+        "publishTime": "2021-11-17T14:27:24Z"
       }
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "lwIr3MGGuMdj9Db-ogNFxLETJW4",
+      "etag": "4KruTETn3ZdZ0tuG-l2znePS__A",
       "id": {
         "kind": "youtube#video",
-        "videoId": "NsazkkuTKhM"
+        "videoId": "GsJd_o97h5U"
       },
       "snippet": {
-        "publishedAt": "2022-06-28T13:12:50Z",
-        "channelId": "UCi8e0iOVk1fEOogdfu4YgfA",
-        "title": "Hocus Pocus 2 Teaser Trailer (2022) | Movieclips Trailers",
-        "description": "Check out the Hocus Pocus 2 Official Teaser Trailer starring Bette Midler, Sarah Jessica Parker, and Kathy Najimy!",
+        "publishedAt": "2021-09-29T14:17:13Z",
+        "channelId": "UCunkR_ekffRWZppVa1E6tIA",
+        "title": "Encanto | Trailer Oficial | Disney",
+        "description": "Encontre a sua magia. ✨   Assista ao novo trailer de #Encanto da Disney. Em breve exclusivo nos cinemas. Site Oficial: ...",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/NsazkkuTKhM/default.jpg",
+            "url": "https://i.ytimg.com/vi/GsJd_o97h5U/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/NsazkkuTKhM/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/GsJd_o97h5U/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/NsazkkuTKhM/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/GsJd_o97h5U/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Movieclips Trailers",
+        "channelTitle": "Disney Brasil",
         "liveBroadcastContent": "none",
-        "publishTime": "2022-06-28T13:12:50Z"
+        "publishTime": "2021-09-29T14:17:13Z"
       }
     },
     {
@@ -792,6 +690,108 @@
     },
     {
       "kind": "youtube#searchResult",
+      "etag": "y2IOR0Oet3s-uOal1upP55mdH6g",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fKTzCunAsI8"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-20T17:42:34Z",
+        "channelId": "UCP6nJ-Elnfnpjv6HQRsv1Cw",
+        "title": "Baymax! | Trailer Oficial 2 Dublado | Disney+",
+        "description": "Todo mundo precisa de um grande herói ○—○ Veja o novo trailer de #Baymax!, uma Série Original. Em 29 de junho no ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fKTzCunAsI8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fKTzCunAsI8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fKTzCunAsI8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios BR",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-20T17:42:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "44nPcnli1MnlVNm8HfGdorfZd6o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "q25hRul0rMc"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-28T15:04:28Z",
+        "channelId": "UCP6nJ-Elnfnpjv6HQRsv1Cw",
+        "title": "Abracadabra 2 | Teaser Trailer Oficial Dublado | Disney+",
+        "description": "Algumas lendas nunca morrem. #Abracadabra2, um Filme Original, em 30 de setembro no #DisneyPlus.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/q25hRul0rMc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/q25hRul0rMc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/q25hRul0rMc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios BR",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-28T15:04:28Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "JsAzCa_gTq5N0S8eGaIWYTDXZ6c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mYfJxlgR2jw"
+      },
+      "snippet": {
+        "publishedAt": "2021-04-28T13:00:15Z",
+        "channelId": "UC_IRYSp4auq7hKLvziWVH6w",
+        "title": "Disney and Pixar’s Luca | Official Trailer | Disney+",
+        "description": "This summer, you're invited to Portorosso. Watch the new trailer for Disney and Pixar's Luca and see the film June 18 on Disney+.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mYfJxlgR2jw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mYfJxlgR2jw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mYfJxlgR2jw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Pixar",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-28T13:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
       "etag": "4DLkOttRyOARrgSbkr_UJz6fOcs",
       "id": {
         "kind": "youtube#video",
@@ -826,36 +826,36 @@
     },
     {
       "kind": "youtube#searchResult",
-      "etag": "EX8muO_a4zkuot1aqwwsM_c-fVU",
+      "etag": "-v3T6_kh_s_sfd1dGbg2bzbGRIY",
       "id": {
         "kind": "youtube#video",
-        "videoId": "4VEzggDQRSk"
+        "videoId": "lcYPrMk12zw"
       },
       "snippet": {
-        "publishedAt": "2022-06-28T21:00:01Z",
-        "channelId": "UCunkR_ekffRWZppVa1E6tIA",
-        "title": "BAYMAX | Trailer Oficial Dublado | Estreia 29 de junho | Disney e Pixar",
-        "description": "Todo mundo precisa de um grande herói ○—○ Veja o novo trailer de #Baymax!, uma Série Original. Em 29 de junho no Disney ...",
+        "publishedAt": "2021-11-12T14:05:33Z",
+        "channelId": "UC_976xMxPgzIa290Hqtk-9g",
+        "title": "Baymax! | Official Trailer | Disney+",
+        "description": "A big hero will rise ○—○ Baymax!, a Disney+ original series, is streaming on Disney+ Summer 2022. #DisneyPlusDay Check in ...",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/4VEzggDQRSk/default.jpg",
+            "url": "https://i.ytimg.com/vi/lcYPrMk12zw/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/4VEzggDQRSk/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/lcYPrMk12zw/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/4VEzggDQRSk/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/lcYPrMk12zw/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
         },
-        "channelTitle": "Disney Brasil",
+        "channelTitle": "Walt Disney Animation Studios",
         "liveBroadcastContent": "none",
-        "publishTime": "2022-06-28T21:00:01Z"
+        "publishTime": "2021-11-12T14:05:33Z"
       }
     }
   ]
