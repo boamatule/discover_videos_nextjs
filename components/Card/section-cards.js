@@ -1,7 +1,8 @@
-import Card from "./Card";
 import Link from "next/link";
 import clsx from "classnames";
 import styles from "./section-cards.module.css";
+import Card from "./Card";
+
 
 const SectionCards = (props) => {
   const { title, videos = [], size, shouldWrap = false, shouldScale } = props;
